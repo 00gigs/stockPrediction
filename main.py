@@ -11,7 +11,7 @@ from tensorflow.keras import layers
 
 
 
-stock_data1 = yf.download('INTC', start='2023-01-01', end='2023-12-20')
+stock_data1 = yf.download('INTC', start='2023-01-01', end='2024-01-01')
 
 
 
