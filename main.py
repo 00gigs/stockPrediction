@@ -77,15 +77,15 @@ x_test = np.reshape(x_test,(x_test.shape[0],x_test.shape[1],1))
 #Setting Up LSTM(long short term memory) Network Architecture
 model = tf.keras.Sequential()
 
-model.add(layers.LSTM(170, return_sequences=True, input_shape=(x_train.shape[1], 1)))
+model.add(layers.LSTM(160, return_sequences=True, input_shape=(x_train.shape[1], 1)))
 
-model.add(layers.LSTM(170,return_sequences=False))
+model.add(layers.LSTM(160,return_sequences=False))
 
-model.add(layers.Dense(25))
+model.add(layers.Dense(22))
 
 model.add(layers.Dense(1))
 
-model.add(layers.Dropout(0.3))
+model.add(layers.Dropout(0.5))
 
 #optimizer = tf.keras.optimizers.legacy.Adam(learning_rate=0.0001)
 #Training LSTM Model
