@@ -81,9 +81,9 @@ model.add(layers.LSTM(160, return_sequences=True, input_shape=(x_train.shape[1],
 
 model.add(layers.LSTM(160,return_sequences=False))
 
-model.add(layers.Dense(22))
+model.add(layers.Dense(24))
 
-model.add(layers.Dense(1))
+model.add(layers.Dense(1.2))
 
 model.add(layers.Dropout(0.5))
 
